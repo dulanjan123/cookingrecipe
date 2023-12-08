@@ -253,13 +253,12 @@
     .category-cards{
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         gap: 2em;
-        padding: 1em 0;
+        padding-top: 1em;
 
     }
 
     .cat-card{
         text-align: center;
-        padding: 1em 0;
         
     }
     .cat-card img{
@@ -399,6 +398,12 @@
         color: var(--cl-3--);
         margin-right: 30px;
     }
+    .category-name{
+        background-color: var(--cl-4--);
+        margin-top: -1em;
+        padding: 2em 0 1em 0;
+        border-radius: 15px;
+    }
 
 
 </style>
@@ -412,30 +417,30 @@
         <div class = "toggleMenu" onclick="toggleMenu();"> </div>
         <nav class="navigation row">
             <ul class="primary-links row">
-                <li> <a href ="#">Home</a></li>
-                <li> <a href ="#">Recipes</a></li>
+                <li> <a href ="index.html">Home</a></li>
+                <li> <a href ="#recipes">Recipes</a></li>
                 <li> <a href ="#">Blog</a></li>
-                <li> <a href ="#">Contact</a></li>
+                <li> <a href ="#contact">Contact</a></li>
                 <li> <a href ="#">About Us</a></li>
             </ul>
             <ul class="secondary-links row">
                 <li>
-                    <a href="#"  title="facebook" > 
+                    <a href="http://www.facebook.com"  title="facebook" > 
                         <i class="fab fa-facebook "></i>
                       </a>
                 </li>
                 <li>
-                    <a href="#"  title="instagram"> 
+                    <a href="http://www.instagram.com"  title="instagram"> 
                         <i class="fab fa-instagram "></i>
                       </a>
                 </li>
                 <li>
-                    <a href="#"  title="twitter"> 
+                    <a href="http://www.twitter.com"  title="twitter"> 
                         <i class="fab fa-twitter "></i>
                       </a>
                 </li>
                 <li>
-                    <a href="#"  title="youtube" > 
+                    <a href="http://www.youtube.com"  title="youtube" > 
                         <i class="fab fa-youtube "></i>
                       </a>
                 </li>
@@ -452,9 +457,9 @@
                     <div class="recipe row"> <img src= "https://static.vecteezy.com/system/resources/thumbnails/020/278/048/small/book-icon-vector.jpg" alt="">Hot Recipes</div>
                         <h1>Discover Culinary Delights: A World of Recipes Await!</h1>
                         <p>Keep it easy with these simple but delicious recipes. From make-ahead lunches and midweek meals to fuss-free sides and moreish cakes, we've got everything.</p>
-                        <button class="glow-on-hover" type="button">View Recipes
+                        <a href="#recipes" ><button class="glow-on-hover" type="button">View Recipes
                             <i class="fas fa-square-caret-right"></i>
-                        </button>
+                        </button> </a>
                 </div>
             </div>
         </div>
@@ -470,34 +475,34 @@
         <div class="category-cards column">
             <a href="#" class = "cat-card">
                 <img src="https://pinchofyum.com/wp-content/uploads/Dynamite-Plant-Power-Sushi-Bowl-2-2-800x800.jpeg" alt="">
-                <h6>VEGAN RECIPES</h6>
+                <h6 class="category-name">VEGAN RECIPES</h6>
             </a>
             <a href="#" class = "cat-card">
                 <img src="https://hips.hearstapps.com/hmg-prod/images/air-fryer-buffalo-cauliflower-copy-1648138812.jpeg?crop=0.716xw:1.00xh;0.178xw,0&resize=640:*" alt="">
-                <h6>SNACKS RECIPES</h6>
+                <h6 class="category-name">SNACKS RECIPES</h6>
             </a>
             <a href="#" class = "cat-card">
                 <img src="https://www.licious.in/blog/wp-content/uploads/2022/11/Shutterstock_1820896124-600x600.jpg" alt="">
-                <h6>KETO RECIPES</h6>
+                <h6 class="category-name">KETO RECIPES</h6>
             </a>
             <a href="#" class = "cat-card">
                 <img src="https://www.tasteofhome.com/wp-content/uploads/2018/01/exps21585_THCA153054D10_15_4b.jpg" alt="">
-                <h6>DESSERT RECIPES</h6>
+                <h6 class="category-name">DESSERT RECIPES</h6>
             </a>
             <a href="#" class = "cat-card">
                 <img src="https://fromnoorskitchen.files.wordpress.com/2020/11/jalapeno-poppers-with-lamb-kheema-noorsrecipes.jpeg" alt="">
-                <h6>NON VEGETARIAN RECIPES</h6>
+                <h6 class="category-name">NON VEGETARIAN RECIPES</h6>
             </a>
             <a href="#" class = "cat-card">
                 <img src="https://www.cookwithnabeela.com/wp-content/uploads/2023/09/PotatoPancakes-1.webp" alt="">
-                <h6>STARCH RECIPES</h6>
+                <h6 class="category-name">STARCH RECIPES</h6>
             </a>
         </div>
     </section>
     <!--end category-->
 
     <!--recipes-->
-    <section class="recipes container">
+    <section class="recipes container" id="recipes">
         <div class="section-title">
             <h2>Simple and tasty recipes</h2>
             <h6>Embark on a Gastronomic Odyssey with Our Exquisite Recipe Categories. A Culinary Tapestry Woven With Love, Crafted for Every Palate and Occasion</h6>
@@ -543,7 +548,7 @@
     <!--end recipes-->
 
     <!--Contact-->
-    <section class="contact">
+    <section class="contact" id="contact">
         <div class="containerui">
             <h2>Contact Us</h2>
             <div class="contact_wrapper">
